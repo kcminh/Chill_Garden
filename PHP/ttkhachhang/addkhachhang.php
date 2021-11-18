@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Xử lý thông tin khách hàng</title>
+</head>
+<body>
+<?php
+//nhúng file kết nối
+    require_once('./connect.php');
+    //Thêm dữ liệu
+    //Lấy dữ liệu trên form => Insert vào CSDL
+    $makh=$_POST['txtmakh'];
+    $tenkh=$_POST['txttenkh'];
+    $email=$_POST['txtemail'];
+    $diachi=$_POST['txtdiachi'];
+    $sdt=$_POST['txtsdt'];
+    $cccd=$_POST['txtcccd'];
+    
+    $sql_insert="Insert into ttkhachhang values('".$makh."','".$tenkh."','".$email."','".$diachi."','".$sdt."','".$cccd."')";
+    $result=$conn->query($sql_insert);
+    if($result)
+    {
+        echo "Thêm dữ liệu thành công";
+    }
+    else{
+    echo "Lỗi thêm  ".$sql_insert."<br>".$conn->error;
+    }
+    $conn->close();
+    header('http://localhost/khachsan/PHP/ttkhachhang/viewkhachhang.php');//điều hướng
+?>
+</body>
+</html>

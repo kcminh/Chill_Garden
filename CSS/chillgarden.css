@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+/* header---------------------------------------------------------------------- */
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* Dùng z-index để chồng lên 
+    các possition trước
+    z - index cao chồng z - index thấp */
+    z-index: 20;
+    /* border-bottom: solid 1px white; */
+}
+header.sticky{
+    background: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+header.sticky #listh1 a{
+    color: #174089;
+}
+header.sticky #listh1 #hide{
+    color: #174089;
+}
+.cogian{
+    margin: 0px auto;
+    max-width: 1400px;
+}
+#main-header{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-height: 70px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+#main-header1{
+    position: relative;
+}
+/* logo */
+#logoh1 img{
+    padding-top: 10px;
+    height: 110px;
+    width: 230px;
+}
+/* end logo */
+
+/* list */
+#listh1{
+    display: flex;
+}
+.l1{
+    font-size: 16px;
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 22px;
+}
+.l1 > a{
+    text-decoration: none;
+    color: white;
+}
+/* end list */
+
+/* nút bấm */
+#buttonh1{
+    position: absolute;
+    right: 0;
+}
+.bth1{
+    font-size: 13px;
+    border: 0px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fbc531;
+    font-weight: bold;
+}
+.bth1 > a{
+    text-decoration: none;
+    color: white;
+}
+/* end header------------------------------------------------------------------------------------------------- */
+
+/* body--------------------------------------------------------------------------------------------- */
+#background > img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#bg1 > #bth2{
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 8px 60px 8px 60px;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border: solid 2px gold;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    /* left: 42%;
+    top: 68%; */
+}
+#bth2 > a{
+    text-decoration: none;
+    color: white;
+}
+#bg1 > .title{
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    bottom: 27%;
+    left: 4%;
+    /* left: 31%;
+    top: 18%; */
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+#bg1 > .span1{
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    bottom: 23%;
+    left: 4%;
+    /* left: 34%;
+    top: 50%; */
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+
+/* end body--------------------------------------------------------------------------------------------- */
+
+/* Trang 2--------------------------------------------------------------------------------------------- */
+#main-body{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gioi-thieu{
+    color: #174089;
+}
+#gioi-thieu > h5{
+    color: gold;
+}
+/* ---------------main- body 2 */
+#main-body2{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gioi-thieu{
+    color: #174089;
+}
+#gioi-thieu > h5{
+    color: gold;
+}
+#anh-gioi-thieu > img{
+    height: 650px;
+    width: 450px;
+    border-radius: 8px;
+}
+.cogian2{
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+.cogian3{
+    margin: 0px auto;
+    max-width: 1400px;
+}
+.cogian3 > img{
+    height: 680px;
+    width: 1400px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+/* End Trang 2--------------------------------------------------------------------------------------------------- */
+.cogian4{
+    min-width: 1400px;
+    border-bottom: solid 1px #174089;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+.cogian4 > thead{
+    color: gold;
+}
+table{
+    text-align: left;
+    line-height: 40px;
+    color: #174089;
+}
+#main-header3 .cogian4 thead img{
+    height: 80px;
+    width: 180px;
+}
+/* The last---------------------------------------------------------------------------------------------------------- */
+
